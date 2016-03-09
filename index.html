@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jquery and page related script(search form script) -->
+        <script src="scripts/jquery-1.11.3.min.js"></script>
+        <script src="scripts/script.js"></script>
+    <!-- Bootstrap -->
+        <script src="scripts/bootstrap/js/bootstrap.js" ></script>
+        <link href="scripts/bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+    <!-- main page css -->
+        <link href="css/main.css" rel="stylesheet">
+    <!-- slider script and css -->
+        <link href="slider/pgwslider.css" rel="stylesheet">
+        <script src="slider/pgwslider_for_index_page.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- tabs -->
+        <link href = "css/jquery-ui/jquery-ui.css" rel = "stylesheet">
+        <link href = "css/jquery-ui/jquery-ui.theme.css" rel = "stylesheet">
+        <link href="css/jquery-ui/jquery-ui.structure.css" rel="stylesheet">
+        <script src = "css/jquery-ui/jquery-ui.js"></script>
+    <title>Welcome to R3sort5</title>
+</head>
+<body>
+    
+    <div class="site-wrapper">  <!-- smaller view using media queries-->  
+
+      <div class="site-wrapper-inner">  <!-- wraping content in the middle-->  
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">  <!-- Logo -->  
+            <div class="inner">
+                <a href="index.html">
+                <img class="masthead-brand" src="images/Logo.png"/></a>
+            </div>
+          </div>
+<form action="#">            
+<div class="form">
+    
+    <h4>Holiday Search</h4>
+    <label for="destinaton">Destination<i class="material-icons">room</i> </label>
+ <!-- Destination Select -->  
+    <select name="destinaton" id="destination">
+        <option name="destinaton" value="Any">Any</option>
+        <option name="destinaton" value="Carribean">Carribean</option>
+        <option name="destinaton" value="Indian Ocean">Indian Ocean</option>
+        <option name="destinaton" value="The Alps">The Alps</option>
+        <option name="destinaton" value="Europe">Europe</option>
+        <option name="destinaton" value="Africa">Africa</option>
+        <option name="destinaton" value="Asia">Asia</option>
+        <option name="destinaton" value="Central America">Central America</option>
+    </select>
+ <!-- Price Select -->  
+     <label for="comfortLevel">Comfort Level<i class="material-icons">star</i></label>
+    <select name="comfortLevel" id="comfortLevel">
+        <option name="comfortLevel" value="Any">Any</option>
+        <option name="comfortLevel" value="4">4 stars</option>
+        <option name="comfortLevel" value="5">5 stars</option>
+    </select>
+    <br><br>
+ <!-- Price Select -->  
+    <label for="price">Price <i class="material-icons">shopping_cart</i> </label>
+    <select name="price" id="price">
+        <option name="price" value="Any">Any</option>
+        <option name="price" value="1980">£1000-1999</option>
+        <option name="price" value="2062">£2000-2999</option>
+    </select>
+    
+   <br><br>
+ <!-- Activity Select -->   
+<div id="activity"><b>Select Activity <i class="material-icons">perm_media</i></label> </b>
+    <label for="activity1">Scuba Diving</label>
+    <input id="activity1" type="checkbox" name="activity" value="scuba diving">
+    <label for="activity2">Kids Club</label>
+    <input id="activity2" type="checkbox" name="activity" value="kids club">
+    <label for="activity3">Water Skiing</label>
+    <input id="activity3" type="checkbox" name="activity" value="water skiing">
+    <label for="activity4">Tennis</label>
+    <input id="activity4" type="checkbox" name="activity" value="tennis">
+    <label for="activity5">Kitesurf</label>
+    <input id="activity5" type="checkbox" name="activity" value="kitesurf">
+    <label for="activity6">Spa</label>
+    <input id="activity6" type="checkbox" name="activity" value="spa">
+    <label for="activity7">Golf</label>
+    <input id="activity7" type="checkbox" name="activity" value="golf">
+    <label for="activity8">Sailing</label>
+    <input id="activity8" type="checkbox" name="activity" value="sailing">
+    <label for="activity9">Snowboarding</label>
+    <input id="activity9" type="checkbox" name="activity" value="snowboarding">
+</div>
+    <br>
+ <!-- Dates Select -->  
+    <label for="datepicker">From <i class="material-icons">today</i></label>
+        <input type="text" id="datepicker" name="datepicker" placeholder="YYYY/MM/DD">
+    <label for="datepicker2">To <i class="material-icons">today</i></label>
+        <input type="text" id="datepicker2" name="datepicker2" placeholder="YYYY/MM/DD">
+    <hr>
+    <button id="search" class="search" type="button">Search Holiday</button>
+    <button id="viewFavourites" class="search" type="button">View Favourites</button>  
+
+  <br><br>
+<div id="placeholder"></div>
+</div> <!-- end of form div -->
+</form>
+          
+<div class="inner cover">
+              <ul class="pgwSlider">
+                  <li><img src="images/large/resort1pic1.jpg" alt="Martinique, Carribean"</li>
+                <li><img src="images/large/resort2pic1.jpg" alt="Mauritius, Indian Ocean" data-large-src="images/large/resort2pic1.jpg"></li>
+                <li><img src="images/large/resort3pic1.jpg" alt="The Alps, Alps" data-large-src="images/large/resort3pic1.jpg"></li>
+                <li><img src="images/resort4pic1small.jpg" alt="Europe, Portugal" data-large-src="images/large/resort4pic1.jpg"></li>
+                <li><img src="images/resort5pic1small.jpg" alt="Africa, Cabo Verde" data-large-src="images/large/resort5pic1.jpg"></li>
+                <li><img src="images/large/resort6pic1.jpg" alt="Asia, Hong Kong" data-large-src="images/large/resort6pic1.jpg"></li>
+                <li><img src="images/large/resort7pic1.jpg" alt="Central America, Costa Rica" data-large-src="images/large/resort7pic1.jpg"></li>
+            </ul>
+          </div>
+
+
+<br>   <!-- Footer -->  
+<div class="footer-bottom">
+    <div class="wrap">	
+	   <div class="copy">
+		  <p>&copy; Sunrise Resorts All rights Reserved | Designed by Haresh Vekriya</p>
+	   </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+</body>
+</html>
+
+

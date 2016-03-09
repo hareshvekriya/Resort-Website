@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jquery and page related script(search form script) -->
+        <script src="scripts/jquery-1.11.3.min.js"></script>
+        <script src="scripts/script.js"></script>
+    <!-- Bootstrap -->
+        <script src="scripts/bootstrap/js/bootstrap.js" ></script>
+        <link href="scripts/bootstrap/css/bootstrap.css" rel="stylesheet">                     <link href="css/animate.css" rel="stylesheet">
+    <!-- main page css -->
+        <link href="css/main.css" rel="stylesheet">
+    <!-- slider script and css -->
+        <link href="slider/pgwslider.css" rel="stylesheet">
+        <script src="slider/pgwslider.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- tabs -->
+        <link href = "css/jquery-ui/jquery-ui.css" rel = "stylesheet">
+        <link href = "css/jquery-ui/jquery-ui.theme.css" rel = "stylesheet">
+        <link href="css/jquery-ui/jquery-ui.structure.css" rel="stylesheet">
+        <script src = "css/jquery-ui/jquery-ui.js"></script>
+    
+    <title>Welcome to Asia</title>
+</head>
+<body>
+    
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+                <a href="index.html">
+                <img class="masthead-brand" src="images/Logo.png"/></a>
+            </div>
+          </div>
+   <div class="form">
+            <h4 id="resort6" class="check">Holiday Search</h4> <!-- change for relevant pages -->
+    <button id="viewFavourites" class="search" type="button">View Favourites</button> 
+    <button class="save" class="search" type="button">Add this to Favourites</button> 
+    <br><br>
+    <div id="draggable" class="ui-widget-content">
+        <p>Drag and drop me to add this resort as your favorite</p>
+    </div>
+ 
+    <div id="droppable" class="ui-widget-header">
+        <p>Drop here</p>
+    </div>
+       
+  <br><br>
+  <div id="placeholder"></div>
+  </div>
+<h3 id="mainHeading"></h3>           
+            
+          <div class="inner cover">
+              <ul class="pgwSlider">
+                  <li><img src="images/large/resort6pic1.jpg" alt="Asia"</li>
+                <li><img src="images/All/resort1pic2large.jpg" alt="Mauritius, Indian Ocean" data-large-src="images/All/resort1pic2large.jpg"></li>
+                <li><img src="images/All/resort1pic3large.jpg" alt="Mauritius, Indian Ocean" data-large-src="images/All/resort1pic3large.jpg"></li>
+                <li><img src="images/All/resort1pic4large.jpg" alt="Mauritius, Indian Ocean" data-large-src="images/All/resort1pic4large.jpg"></li>
+                <li><img src="images/All/resort1pic5large.jpg" alt="Mauritius, Indian Ocean" data-large-src="images/All/resort1pic5large.jpg"></li>
+                <li><img src="images/All/resort1pic6large.jpg" alt="Mauritius, Indian Ocean" data-large-src="images/All/resort1pic6large.jpg"></li>
+                <li><img src="images/All/resort1pic7accomodation.jpg" alt="Mauritius, Indian Ocean" data-large-src="images/All/resort1pic7accomodation.jpg"></li>
+            </ul>
+          </div>
+     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p id="holsDescription"></p>   
+    
+  <div class="tabs" id = "tabs">
+         <ul>
+            <li><a href = "#tabs-1">Description</a></li>
+            <li><a href = "#tabs-2">Accomodation</a></li>
+            <li><a href = "#tabs-3">Map</a></li>
+         </ul>
+			
+         <div id = "tabs-1"> <!-- Description tab -->
+         </div>
+			
+         <div id = "tabs-2"> <!-- Acomodation tab -->
+             <h5 id="placeholderTab2"></h5>
+             <ul class="pgwSlider">
+                  <li><img src="images/All/resort1pic7accomodation.jpg" alt="Martinique, Carribean"</li>
+                <li><img src="images/All/resort1pic8accomodation.jpg"  data-large-src="images/All/resort1pic8accomodation.jpg"></li>
+            </ul>
+             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+         </div>
+			
+         <div id = "tabs-3"> <!-- Google Maps tab-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d236152.69522320307!2d113.98135029492141!3d22.357938141088468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1452469128787" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+         </div>	
+      </div>
+<br>  
+<div class="footer-bottom">
+    <div class="wrap">	
+	   <div class="copy">
+		  <p>&copy; Sunrise Resorts All rights Reserved | Designed by Haresh Vekriya</p>
+	   </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+    <!-- Slider Script -->
+    <script>
+        
+    $(function() {
+            $( "#tabs" ).tabs();
+         }); 
+    $(window).load(function() {
+    $('.pgwSlider').pgwSlider();
+        
+    });//end of window load
+    </script>
+    
+</body>
+</html>
+
+
